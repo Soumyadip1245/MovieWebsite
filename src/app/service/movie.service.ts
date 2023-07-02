@@ -8,8 +8,6 @@ import { Observable } from 'rxjs';
 export class MovieService {
   constructor(private http: HttpClient) { }
   getData(data: any):Observable<any>{
-    return this.http.get(`http://www.omdbapi.com/?s=${data}&apikey=7aabc958`);
-    // return this.http.get(`http://www.omdbapi.com/?s=bahubali&apikey=7aabc958`);
-
+    return this.http.get(`https://www.omdbapi.com/?s=${data}&apikey=7aabc958`);
   }
 }
