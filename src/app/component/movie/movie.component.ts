@@ -21,8 +21,7 @@ export class MovieComponent {
       this.response = curr.Response;
       this.movies = curr.Search;
       this.searchbar = "";
-      this.currentPage = 1;
-      console.log(this.movies);
+      this.currentPage = 1
     });
   }
   
